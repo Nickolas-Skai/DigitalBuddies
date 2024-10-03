@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Digital Literacy Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Senior Digital Literacy Monitoring</h1>
+
+    <form id="senior-form">
+        <!-- Senior's Information -->
+        <fieldset>
+            <legend>Senior's Information</legend>
+            <label for="name">Name of Senior:</label>
+            <input type="text" id="name" required><br>
+
+            <label for="contact">Contact Details:</label>
+            <input type="text" id="contact"><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone"><br>
+
+            <label for="email">Email (if available):</label>
+            <input type="email" id="email"><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address"><br>
+        </fieldset>
+
+        <!-- Smartphone Basics -->
+        <fieldset>
+            <legend>Smartphone Basics</legend>
+            <label><input type="checkbox" id="turn-phone-on-off"> Turning the phone on/off</label><br>
+            <label><input type="checkbox" id="navigate-home-screen"> Navigating the home screen</label><br>
+            <label><input type="checkbox" id="adjust-volume"> Adjusting volume and brightness</label><br>
+            <label><input type="checkbox" id="make-calls"> Making and receiving calls</label><br>
+            <label><input type="checkbox" id="send-texts"> Sending and receiving text messages</label><br>
+        </fieldset>
+
+        <!-- Using Applications -->
+        <fieldset>
+            <legend>Using Applications</legend>
+            <label><input type="checkbox" id="download-apps"> Downloading and installing apps</label><br>
+            <label><input type="checkbox" id="use-whatsapp"> Introduction to WhatsApp</label><br>
+            <label><input type="checkbox" id="whatsapp-messages"> Sending and receiving WhatsApp messages</label><br>
+            <label><input type="checkbox" id="whatsapp-calls"> Making WhatsApp voice/video calls</label><br>
+            <label><input type="checkbox" id="use-facebook"> Introduction to Facebook</label><br>
+            <label><input type="checkbox" id="facebook-posts"> Browsing and posting on Facebook</label><br>
+        </fieldset>
+
+        <!-- Email and Internet -->
+        <fieldset>
+            <legend>Email and Internet</legend>
+            <label><input type="checkbox" id="setup-email"> Setting up an email account</label><br>
+            <label><input type="checkbox" id="send-emails"> Sending and receiving emails</label><br>
+            <label><input type="checkbox" id="browse-internet"> Browsing the internet</label><br>
+            <label><input type="checkbox" id="search-info"> Searching for information online</label><br>
+        </fieldset>
+
+        <!-- Online Safety -->
+        <fieldset>
+            <legend>Online Safety</legend>
+            <label><input type="checkbox" id="recognize-phishing"> Recognizing phishing attempts</label><br>
+            <label><input type="checkbox" id="create-strong-passwords"> Creating strong passwords</label><br>
+            <label><input type="checkbox" id="safe-browsing"> Safe browsing practices</label><br>
+            <label><input type="checkbox" id="protect-info"> Protecting personal information online</label><br>
+        </fieldset>
+
+        <!-- Additional Topics -->
+        <fieldset>
+            <legend>Additional Topics</legend>
+            <label><input type="checkbox" id="online-shopping"> Online shopping basics</label><br>
+            <label><input type="checkbox" id="online-banking"> Online banking introduction</label><br>
+            <label><input type="checkbox" id="zoom-calls"> Using Zoom for video calls</label><br>
+            <label for="other-topics">Other (specify):</label>
+            <input type="text" id="other-topics"><br>
+        </fieldset>
+
+        <!-- Session Summary -->
+        <fieldset>
+            <legend>Session Summary</legend>
+            <label for="session-summary">Summary of the Session:</label>
+            <textarea id="session-summary" rows="4" required></textarea><br>
+        </fieldset>
+
+        <!-- Supervisor's Review -->
+        <fieldset>
+            <legend>Supervisor's Review</legend>
+            <label for="supervisor-name">Supervisor's Name:</label>
+            <input type="text" id="supervisor-name" required><br>
+
+            <label for="review-date">Date of Review:</label>
+            <input type="date" id="review-date" required><br>
+
+            <label for="supervisor-signature">Supervisor's Signature:</label>
+            <input type="text" id="supervisor-signature" placeholder="Signature (typed)" required><br>
+        </fieldset>
+
+        <button type="button" id="save-btn">Save Entry</button>
+    </form>
+
+    <div id="reports">
+        <h2>Reports</h2>
+        <ul id="report-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
